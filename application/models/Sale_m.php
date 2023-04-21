@@ -134,7 +134,7 @@ class Sale_m extends CI_Model
     }
 
     public function get_sale_detail($sale_id = null)
-    {
+    { 
         $this->db->select('*, customer.name as customer_name, p_item.name as item_name');
         $this->db->from('t_sale_detail');
         $this->db->join('p_item', 't_sale_detail.item_id=p_item.item_id');
